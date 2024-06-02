@@ -1,0 +1,33 @@
+{
+   "manifest_version": 3,
+   "name": "boa time helper by Ameen Ahmed",
+   "version": "1.1",
+   "description": "A simple time management app for Chrome.",
+   "permissions": [],
+   "content_scripts": [
+     {
+      "matches": [ "https://bakeoffice.dhhmena.com/*", "file://*/*" ],
+       "js": ["content.js"],
+       "run_at": "document_end"
+     }
+   ],
+   "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",
+    "sandbox": "sandbox allow-scripts; script-src 'self' 'https://apis.google.com/' 'https://www.gstatic.com/' 'https://*.firebaseio.com' 'https://www.googleapis.com' 'https://ajax.googleapis.com'; object-src 'self'"
+  },
+   "action": {
+     "default_popup": "popup.html",
+     "default_icon": {
+      "19": "icon.png",
+      "38": "icon.png",
+      "128": "icon.png",
+      "48": "icon.png"
+     }
+   },
+   "icons": {
+      "19": "icon.png",
+      "38": "icon.png" ,
+      "128": "icon.png",
+      "48": "icon.png"
+   }
+ }
