@@ -1,3 +1,7 @@
 {
-    "Email": "ameen.ahmed19996@gmail.com",
+    "emails": [
+    "ameen.ahmed19996@gmail.com",
+    "example2@example.com",
+    "example3@example.com"
+  ]
 }
